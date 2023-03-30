@@ -3,6 +3,8 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        // 引用部分外部github 仓库
+        maven { url 'https://jitpack.io' }
     }
 }
 dependencyResolutionManagement {
@@ -10,8 +12,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // 引用部分外部github 仓库
+        maven { url 'https://jitpack.io' }
     }
 }
 rootProject.name = "EmsmAdapter"
 include ':app'
 include ':lib-emsm'
+include ':lib-emsm-1'
